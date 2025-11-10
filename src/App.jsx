@@ -584,7 +584,7 @@ export default function SurveillanceAwarenessPage() {
               <p className="text-gray-400 text-sm mb-4">
                 Public records guidance, dispute resolution
               </p>
-              <a href="https://www.atg.wa.gov/public-records" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+              <a href="https://www.atg.wa.gov/open-government" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
                 Public Records Resources <ExternalLink className="w-4 h-4 ml-1" />
               </a>
               <p className="text-sm text-gray-500 mt-2">Phone: (360) 753-6200</p>
