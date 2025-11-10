@@ -4,7 +4,7 @@ A campaign website to help Washington State residents demand transparency about 
 
 ## Live Site
 
-Visit the live site at: [https://jeff-is-working.github.io/wa-surveillance-watch/](https://jeff-is-working.github.io/wa-surveillance-watch/)
+Visit the live site at: [https://jeff-is-working.github.io/surveillance-watch/](https://jeff-is-working.github.io/surveillance-watch/)
 
 ## About
 
