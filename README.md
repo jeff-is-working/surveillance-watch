@@ -179,7 +179,7 @@ This is a community resource. Contributions are welcome!
 ## Resources
 
 - **ACLU of Washington**: [aclu-wa.org](https://www.aclu-wa.org) | (206) 624-2184
-- **WA Attorney General Public Records**: [atg.wa.gov/public-records](https://www.atg.wa.gov/public-records) | (360) 753-6200
+- **WA Attorney General Public Records**: [https://www.atg.wa.gov/open-government](https://www.atg.wa.gov/open-government) | (360) 753-6200
 - **UW Center for Human Rights**: [jsis.washington.edu/humanrights](https://jsis.washington.edu/humanrights)
 
 ## Legal Disclaimer
