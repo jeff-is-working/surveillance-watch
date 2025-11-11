@@ -158,7 +158,7 @@ Your agency denied my request on [DATE], citing privacy concerns and
 LEGAL BASIS FOR APPEAL:
 
 1. CONTROLLING COURT PRECEDENT:
-On November 7, 2024, Skagit County Superior Court Judge Elizabeth Yost 
+On November 7, 2025, Skagit County Superior Court Judge Elizabeth Yost 
 Neidzwski ruled in Rodriguez v. City of Sedro Woolley that surveillance 
 camera data collected by law enforcement agencies qualifies as public 
 records subject to the Washington Public Records Act (RCW 42.56).
@@ -313,8 +313,8 @@ awareness.
 
 3. PUBLIC SIGNIFICANCE:
 Given:
-- The November 2024 Skagit County court ruling on surveillance transparency
-- The October 2024 University of Washington report revealing unauthorized 
+- The November 2025 Skagit County court ruling on surveillance transparency
+- The October 2025 University of Washington report revealing unauthorized 
   federal access to Washington surveillance systems
 - Widespread public concern about surveillance and civil liberties
 
