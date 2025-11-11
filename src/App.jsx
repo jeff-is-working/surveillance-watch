@@ -11,14 +11,14 @@ export default function SurveillanceAwarenessPage() {
   };
 
   const toolkitFiles = [
-    { name: 'Simplified Template', path: '/public/Template_download/flock_camera_records_request_SIMPLIFIED.md', filename: 'Simplified_Template.md' },
-    { name: 'Comprehensive Template', path: '/public/Template_download/flock_camera_records_request_template.md', filename: 'Comprehensive_Template.md' },
-    { name: 'Complete How-To Guide', path: '/public/Template_download/HOW_TO_GUIDE_public_records_requests.md', filename: 'How_To_Guide.md' },
-    { name: 'Quick Start Guide', path: '/public/Template_download/QUICK_START_one_page_guide.md', filename: 'Quick_Start_Guide.md' },
-    { name: 'Legal Context Document', path: '/public/Template_download/LEGAL_CONTEXT_surveillance_cameras.md', filename: 'Legal_Context.md' },
-    { name: 'Email Templates', path: '/public/Template_download/EMAIL_TEMPLATES_all_scenarios.md', filename: 'Email_Templates.md' },
-    { name: 'Quick Reference', path: '/public/Template_download/QUICK_REFERENCE_surveillance_requests.md', filename: 'Quick_Reference.md' },
-    { name: 'Toolkit Index', path: '/public/Template_download/TOOLKIT_INDEX_master_guide.md', filename: 'Toolkit_Index.md' }
+    { name: 'Simplified Template', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/flock_camera_records_request_SIMPLIFIED.md', filename: 'Simplified_Template.md' },
+    { name: 'Comprehensive Template', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/flock_camera_records_request_template.md', filename: 'Comprehensive_Template.md' },
+    { name: 'Complete How-To Guide', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/HOW_TO_GUIDE_public_records_requests.md', filename: 'How_To_Guide.md' },
+    { name: 'Quick Start Guide', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/QUICK_START_one_page_guide.md', filename: 'Quick_Start_Guide.md' },
+    { name: 'Legal Context Document', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/LEGAL_CONTEXT_surveillance_cameras.md', filename: 'Legal_Context.md' },
+    { name: 'Email Templates', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/EMAIL_TEMPLATES_all_scenarios.md', filename: 'Email_Templates.md' },
+    { name: 'Quick Reference', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/QUICK_REFERENCE_surveillance_requests.md', filename: 'Quick_Reference.md' },
+    { name: 'Toolkit Index', path: 'https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/TOOLKIT_INDEX_master_guide.md', filename: 'Toolkit_Index.md' }
   ];
 
   const downloadAllFiles = () => {
@@ -370,7 +370,7 @@ export default function SurveillanceAwarenessPage() {
                     <li>+ Network audit logs</li>
                   </ul>
                   <a 
-                    href="/public/Template_download/flock_camera_records_request_SIMPLIFIED.md" 
+                    href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/flock_camera_records_request_SIMPLIFIED.md" 
                     download="Surveillance_Camera_Request_SIMPLIFIED.md"
                     className="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                   >
@@ -393,7 +393,7 @@ export default function SurveillanceAwarenessPage() {
                     <li>+ Financial analyses</li>
                   </ul>
                   <a 
-                    href="/public/Template_download/flock_camera_records_request_template.md" 
+                    href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/flock_camera_records_request_template.md" 
                     download="Surveillance_Camera_Request_COMPREHENSIVE.md"
                     className="w-full bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                   >
@@ -446,7 +446,7 @@ export default function SurveillanceAwarenessPage() {
                     Step-by-step walkthrough with 7 detailed steps, troubleshooting, and Thurston County contacts.
                   </p>
                   <a 
-                    href="/public/Template_download/HOW_TO_GUIDE_public_records_requests.md"
+                    href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/HOW_TO_GUIDE_public_records_requests.md"
                     download="How_To_Guide.md"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
@@ -461,7 +461,7 @@ export default function SurveillanceAwarenessPage() {
                     One-page printable reference card. Get started in 5 minutes.
                   </p>
                   <a 
-                    href="/public/Template_download/QUICK_START_one_page_guide.md"
+                    href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/QUICK_START_one_page_guide.md"
                     download="Quick_Start_Guide.md"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
@@ -476,7 +476,7 @@ export default function SurveillanceAwarenessPage() {
                     Deep dive into court ruling, UW report, and how to cite precedent in appeals.
                   </p>
                   <a 
-                    href="/public/Template_download/LEGAL_CONTEXT_surveillance_cameras.md"
+                    href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/LEGAL_CONTEXT_surveillance_cameras.md"
                     download="Legal_Context.md"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
@@ -491,7 +491,7 @@ export default function SurveillanceAwarenessPage() {
                     10 ready-to-use templates for submission, follow-ups, appeals, and more.
                   </p>
                   <a 
-                    href="/public/Template_download/EMAIL_TEMPLATES_all_scenarios.md"
+                    href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/EMAIL_TEMPLATES_all_scenarios.md"
                     download="Email_Templates.md"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
