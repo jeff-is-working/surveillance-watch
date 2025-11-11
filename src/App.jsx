@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { AlertCircle, Eye, Camera, FileText, Users, Shield, ChevronDown, Download, ExternalLink, CheckCircle, XCircle } from 'lucide-react';
+import { AlertCircle, Eye, Camera, FileText, Users, Shield, ChevronDown, Download, ExternalLink, CheckCircle, XCircle, Share2 } from 'lucide-react';
 
 export default function SurveillanceAwarenessPage() {
   const [activeTab, setActiveTab] = useState('overview');
@@ -23,6 +23,35 @@ export default function SurveillanceAwarenessPage() {
 
   const downloadAllFiles = () => {
     setShowDownloadModal(true);
+  };
+
+  const shareThisCampaign = async () => {
+    const shareData = {
+      title: 'WA Surveillance Watch',
+      text: 'Demand transparency on law enforcement surveillance cameras in Washington State. Get free templates to file public records requests.',
+      url: window.location.href
+    };
+
+    // Try Web Share API first (works on mobile and modern browsers)
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (err) {
+        // User cancelled or error occurred
+        if (err.name !== 'AbortError') {
+          console.error('Error sharing:', err);
+        }
+      }
+    } else {
+      // Fallback: Copy URL to clipboard
+      try {
+        await navigator.clipboard.writeText(window.location.href);
+        alert('Link copied to clipboard! Share it with others to spread awareness.');
+      } catch (err) {
+        // Final fallback: Show the URL
+        prompt('Copy this link to share:', window.location.href);
+      }
+    }
   };
 
   return (
@@ -677,7 +706,11 @@ export default function SurveillanceAwarenessPage() {
               <Download className="inline w-5 h-5 mr-2" />
               Get the Toolkit
             </button>
-            <button className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition">
+            <button 
+              onClick={shareThisCampaign}
+              className="bg-transparent border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition"
+            >
+              <Share2 className="inline w-5 h-5 mr-2" />
               Share This Campaign
             </button>
           </div>
