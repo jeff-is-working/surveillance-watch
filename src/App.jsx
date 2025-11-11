@@ -654,7 +654,7 @@ export default function SurveillanceAwarenessPage() {
               },
               {
                 q: "What if my city denies my request citing privacy?",
-                a: "Use our appeal template citing the November 2024 Skagit County court ruling that rejected privacy arguments for broad surveillance."
+                a: "Use our appeal template citing the November 2025 Skagit County court ruling that rejected privacy arguments for broad surveillance."
               },
               {
                 q: "How long does the process take?",
