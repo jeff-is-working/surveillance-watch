@@ -107,7 +107,7 @@ Thank you,
 **Use this response:**
 
 ```
-I am appealing this denial. In November 2024, Skagit County 
+I am appealing this denial. In November 2025, Skagit County 
 Superior Court ruled in Rodriguez v. City of Sedro Woolley 
 that surveillance camera data MUST be released under RCW 42.56. 
 The judge specifically rejected privacy arguments, finding 
@@ -182,7 +182,7 @@ The templates already cover these, but key items:
 
 ## ⚖️ YOUR LEGAL RIGHTS
 
-**Recent Court Win:** November 2024 ruling confirmed surveillance 
+**Recent Court Win:** November 2025 ruling confirmed surveillance 
 camera data is public record under RCW 42.56
 
 **5-Day Response:** Agencies must respond within 5 business days 
@@ -198,7 +198,7 @@ minimal cost
 
 ## 🚨 KEY FINDING: FEDERAL ACCESS
 
-A University of Washington report (October 2024) found:
+A University of Washington report (October 2025) found:
 - **8+ WA agencies** directly shared data with Border Patrol
 - **10+ WA agencies** had unauthorized "back door" federal access
 - Auburn & Lakewood were **unaware** and revoked access
