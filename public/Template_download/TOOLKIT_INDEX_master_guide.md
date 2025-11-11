@@ -300,8 +300,8 @@ Create a simple spreadsheet:
 
 | Agency | Submitted | Confirmed | Due Date | Status | Next Action | Notes |
 |--------|-----------|-----------|----------|--------|-------------|-------|
-| Olympia PD | 11/15/24 | Yes | 11/22/24 | Waiting | Check 11/22 | Cameras at 3 locations |
-| Lacey PD | 11/20/24 | No | 11/27/24 | Need confirm | Follow up if no confirm by 11/21 | Sent via email |
+| Olympia PD | 11/15/25 | Yes | 11/22/25 | Waiting | Check 11/22 | Cameras at 3 locations |
+| Lacey PD | 11/20/25 | No | 11/27/25 | Need confirm | Follow up if no confirm by 11/21 | Sent via email |
 
 ---
 
@@ -431,8 +431,8 @@ Create a simple spreadsheet:
 - All scenarios covered
 
 ### **Up-to-Date**
-- Based on November 2024 court ruling
-- Reflects October 2024 UW report findings
+- Based on November 2025 court ruling
+- Reflects October 2025 UW report findings
 - Addresses current federal access concerns
 
 ### **User-Friendly**
@@ -472,8 +472,8 @@ Create a simple spreadsheet:
 ## 📝 UPDATES AND MAINTENANCE
 
 This toolkit is current as of **November 2024** and reflects:
-- ✅ Rodriguez v. Sedro Woolley ruling (Nov 2024)
-- ✅ UW Center for Human Rights report (Oct 2024)
+- ✅ Rodriguez v. Sedro Woolley ruling (Nov 2025)
+- ✅ UW Center for Human Rights report (Oct 2025)
 - ✅ Current RCW 42.56 requirements
 - ✅ Known surveillance deployments in WA
 
@@ -527,7 +527,7 @@ This toolkit was developed to help Washington State residents exercise their rig
 ---
 
 *Washington State Surveillance Camera Public Records Toolkit*  
-*Version 1.0 | November 2024*  
+*Version 1.0 | November 2025*  
 *For questions, contact advocacy organizations listed in the toolkit*
 
 **"Sunlight is the best disinfectant." - Justice Louis Brandeis**
