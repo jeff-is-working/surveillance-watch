@@ -4,7 +4,7 @@ A campaign website to help Washington State residents demand transparency about 
 
 ## Live Site
 
-Visit the live site at: [[https://www.wasurveillancewatch.org/](https://www.wasurveillancewatch.org/)
+Visit the live site at: [https://www.wasurveillancewatch.org/](https://www.wasurveillancewatch.org/)
 
 ## About
 
