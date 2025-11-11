@@ -5,7 +5,7 @@
 
 ## ⚖️ YOUR LEGAL RIGHTS
 
-**Recent Court Ruling (Nov 2024):** Skagit County Superior Court ruled that surveillance camera data collected by police **MUST** be released under RCW 42.56, even when it includes images of people not suspected of crimes.
+**Recent Court Ruling (Nov 2025):** Skagit County Superior Court ruled that surveillance camera data collected by police **MUST** be released under RCW 42.56, even when it includes images of people not suspected of crimes.
 
 **Key Quote from Judge:** *"The Flock data do qualify as public records subject to the Public Records Act."*
 
@@ -48,7 +48,7 @@
 
 ## 🚨 FEDERAL ACCESS ISSUE
 
-**UW Report Findings (Oct 2024):**
+**UW Report Findings (Oct 2025):**
 - At least **8 WA agencies** directly shared data with Border Patrol
 - At least **10 WA agencies** had "back door" federal access without knowledge
 - Auburn and Lakewood discovered unauthorized access and revoked it
@@ -65,7 +65,7 @@
 ## 🛡️ IF YOUR REQUEST IS DENIED
 
 ### Privacy-Based Denials:
-✅ Cite: *Rodriguez v. City of Sedro Woolley* (Nov 2024)  
+✅ Cite: *Rodriguez v. City of Sedro Woolley* (Nov 2025)  
 ✅ Note: Court rejected privacy arguments for "broad and indiscriminate" surveillance  
 ✅ Quote: Judge found data "must be released under public records law"
 
@@ -155,7 +155,7 @@
 ## 📚 LEGAL CITATIONS
 
 **Washington Public Records Act:** RCW 42.56  
-**Court Precedent:** *Rodriguez v. City of Sedro Woolley*, Skagit County Superior Court (Nov. 7, 2024)  
+**Court Precedent:** *Rodriguez v. City of Sedro Woolley*, Skagit County Superior Court (Nov. 7, 2025)  
 **Immigration Shield Law:** RCW 10.93.160  
 **Response Requirement:** RCW 42.56.520 (5-day deadline)  
 **Redaction Rules:** RCW 42.56.210  
@@ -210,4 +210,4 @@ All templates available at: [Your storage location]
 
 *Print this guide | Share widely | Know your rights*
 
-**Version 1.0 | November 2024**
+**Version 1.0 | November 2025**
