@@ -129,7 +129,7 @@ For each identified camera/surveillance location and system, and all other simil
 - Access credentials and user accounts for external access to surveillance systems
 - Records of civilian requests for footage through community camera programs
 - Communications regarding federal agency access requests or data sharing
-- Records of access revocations or security audits following the UW Center for Human Rights report (October 2024)
+- Records of access revocations or security audits following the UW Center for Human Rights report (October 2025)
 
 ### 4. USAGE STATISTICS
 For ALPR systems:
@@ -251,7 +251,7 @@ Sincerely,
 - The November 2024 Skagit County Superior Court ruling establishes that surveillance camera data is subject to RCW 42.56
 - If an agency denies your request citing privacy concerns, you can reference this precedent
 - The judge specifically rejected the argument that broad surveillance collection creates a privacy exemption
-- You may want to cite: *Rodriguez v. City of Sedro Woolley*, Skagit County Superior Court (Nov. 7, 2024)
+- You may want to cite: *Rodriguez v. City of Sedro Woolley*, Skagit County Superior Court (Nov. 7, 2025)
 
 **Follow-Up:**
 - If no response within 5 business days, send a polite follow-up
@@ -274,7 +274,7 @@ Sincerely,
 - Municipal Research and Services Center (MRSC) Public Records Guide
 - ACLU of Washington - Technology and Liberty: https://www.aclu-wa.org/
 - UW Center for Human Rights Report on Flock Surveillance (Oct 2024): https://jsis.washington.edu/humanrights/
-- *Rodriguez v. City of Sedro Woolley* case coverage: Search "Skagit County Flock camera ruling 2024"
+- *Rodriguez v. City of Sedro Woolley* case coverage: Search "Skagit County Flock camera ruling 2025"
 
 **Organizations That May Assist:**
 - ACLU of Washington: Provides guidance on surveillance technology and civil liberties
