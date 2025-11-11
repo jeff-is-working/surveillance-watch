@@ -6,7 +6,7 @@
 
 ## EXECUTIVE SUMMARY
 
-In November 2025, a Washington State Superior Court judge ruled that data collected by automated surveillance cameras, including Flock Safety ALPR systems, qualifies as public records under the Washington Public Records Act (RCW 42.56). This landmark decision strengthens the public's right to access surveillance data collected by law enforcement agencies across Washington State.
+In November 2025, a Washington State Skagit County Superior Court judge ruled that data collected by automated surveillance cameras, including Flock Safety ALPR systems, qualifies as public records under the Washington Public Records Act (RCW 42.56). This landmark decision strengthens the public's right to access surveillance data collected by law enforcement agencies across Washington State.
 
 Additionally, a University of Washington report revealed that federal immigration enforcement agencies had accessed Washington's surveillance camera networks, often without local agencies' knowledge, raising serious concerns about state sovereignty and civil liberties.
 
