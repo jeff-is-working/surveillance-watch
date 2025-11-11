@@ -1,12 +1,12 @@
 # LEGAL CONTEXT FOR SURVEILLANCE CAMERA PUBLIC RECORDS REQUESTS
 ## Recent Washington State Court Ruling & Federal Access Concerns
-### November 2024
+### November 2025
 
 ---
 
 ## EXECUTIVE SUMMARY
 
-In November 2024, a Washington State Superior Court judge ruled that data collected by automated surveillance cameras, including Flock Safety ALPR systems, qualifies as public records under the Washington Public Records Act (RCW 42.56). This landmark decision strengthens the public's right to access surveillance data collected by law enforcement agencies across Washington State.
+In November 2025, a Washington State Superior Court judge ruled that data collected by automated surveillance cameras, including Flock Safety ALPR systems, qualifies as public records under the Washington Public Records Act (RCW 42.56). This landmark decision strengthens the public's right to access surveillance data collected by law enforcement agencies across Washington State.
 
 Additionally, a University of Washington report revealed that federal immigration enforcement agencies had accessed Washington's surveillance camera networks, often without local agencies' knowledge, raising serious concerns about state sovereignty and civil liberties.
 
@@ -19,7 +19,7 @@ Additionally, a University of Washington report revealed that federal immigratio
 **Case:** *Rodriguez v. City of Sedro Woolley and City of Stanwood*  
 **Court:** Skagit County Superior Court  
 **Judge:** Elizabeth Yost Neidzwski  
-**Date:** November 7, 2024
+**Date:** November 7, 2025
 
 **Parties:**
 - **Plaintiff:** Jose Rodriguez, a tattoo artist and Oregon resident who works in Washington
@@ -67,7 +67,7 @@ Following the ruling:
 
 **Title:** "Leaving the Door Wide Open: Flock Surveillance Systems Expose Washington Data to Immigration Enforcement"  
 **Author:** University of Washington Center for Human Rights  
-**Date:** October 2024
+**Date:** October 2025
 
 ### Key Findings
 
@@ -342,7 +342,7 @@ A: They must cite a specific RCW 42.56 exemption and explain how it applies. You
 
 ## CONCLUSION
 
-The November 2024 Skagit County Superior Court ruling represents a significant victory for government transparency in Washington State. Combined with the revelations in the UW Center for Human Rights report, these developments have created both an opportunity and an obligation for citizens to demand accountability regarding surveillance technology.
+The November 2025 Skagit County Superior Court ruling represents a significant victory for government transparency in Washington State. Combined with the revelations in the UW Center for Human Rights report, these developments have created both an opportunity and an obligation for citizens to demand accountability regarding surveillance technology.
 
 Your public records requests are not just about obtaining information — they're about ensuring that government surveillance programs operate with transparency, oversight, and respect for civil liberties.
 
@@ -353,5 +353,5 @@ Your public records requests are not just about obtaining information — they'r
 *This document is for informational purposes only and does not constitute legal advice. For specific legal guidance, consult with an attorney.*
 
 **Document Version:** 1.0  
-**Last Updated:** November 2024  
+**Last Updated:** November 2025  
 **Sources:** Skagit County Superior Court records, UW Center for Human Rights, news reports, public agency statements
