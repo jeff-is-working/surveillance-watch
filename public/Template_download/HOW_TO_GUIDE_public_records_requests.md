@@ -32,7 +32,7 @@ Law enforcement agencies across Washington are deploying surveillance camera sys
 - Share data with other agencies, including federal immigration enforcement
 
 **Recent developments:**
-- A November 2024 court ruling confirmed this data is public record
+- A November 2025 court ruling confirmed this data is public record
 - A University of Washington report revealed federal agencies accessed local surveillance systems without agencies' knowledge
 - Several cities have paused or shut down camera programs due to transparency concerns
 
@@ -259,7 +259,7 @@ Work through the template from top to bottom, replacing each [PLACEHOLDER] with 
 
 **With:**
 ```
-**Date:** November 15, 2024
+**Date:** November 15, 2025
 ```
 
 **Replace:**
@@ -376,7 +376,7 @@ Sincerely,
 Sincerely,
 
 Jane Smith
-November 15, 2024
+November 15, 2025
 ```
 
 ### Double-Check Your Work
@@ -393,7 +393,7 @@ November 15, 2024
 
 **Save with a clear filename:**
 ```
-Public_Records_Request_Olympia_PD_2024-11-15.pdf
+Public_Records_Request_Olympia_PD_2025-11-15.pdf
 ```
 or
 ```
@@ -680,9 +680,9 @@ Thank you,
 
 | Date | Action | Response | Next Step | Deadline |
 |------|--------|----------|-----------|----------|
-| 11/11/24 | Submitted request | - | Wait for response | 11/18/24 |
-| 11/18/24 | Agency response | Need 30 days | - | 12/18/24 |
-| 12/18/24 | Records received | Partial | Follow-up needed | - |
+| 11/11/24 | Submitted request | - | Wait for response | 11/18/25 |
+| 11/18/25 | Agency response | Need 30 days | - | 12/18/25 |
+| 12/18/25 | Records received | Partial | Follow-up needed | - |
 
 ---
 
@@ -847,7 +847,7 @@ A: Ask them to document their search. If you have evidence cameras exist (news a
 ### Legal Questions
 
 **Q: What if they cite a privacy exemption?**
-A: Reference the November 2024 Skagit County court ruling that rejected privacy exemptions for broad surveillance. See the Troubleshooting section.
+A: Reference the November 2025 Skagit County court ruling that rejected privacy exemptions for broad surveillance. See the Troubleshooting section.
 
 **Q: Can they charge me for their lawyer reviewing the records?**
 A: No. RCW 42.56 specifically prohibits charging for legal review time.
@@ -996,7 +996,7 @@ I am appealing the denial of my public records request dated [Date] regarding su
 
 Your agency denied my request citing privacy concerns. However:
 
-1. LEGAL PRECEDENT: In November 2024, Skagit County Superior Court Judge Elizabeth Yost Neidzwski ruled in Rodriguez v. City of Sedro Woolley that surveillance camera data qualifies as public records subject to RCW 42.56.
+1. LEGAL PRECEDENT: In November 2025, Skagit County Superior Court Judge Elizabeth Yost Neidzwski ruled in Rodriguez v. City of Sedro Woolley that surveillance camera data qualifies as public records subject to RCW 42.56.
 
 2. COURT FINDING: The judge specifically found that the scope of surveillance is "so broad and indiscriminate" — with most images capturing people not suspected of any crime — that the data MUST be released under public records law.
 
@@ -1395,13 +1395,13 @@ Thousands of Washington residents are concerned about surveillance technology. Y
 - Limits on cooperation with federal immigration enforcement
 
 **Court Decisions**
-- *Rodriguez v. City of Sedro Woolley* (Skagit County Superior Court, Nov. 2024)
+- *Rodriguez v. City of Sedro Woolley* (Skagit County Superior Court, Nov. 2025)
 - Search news coverage for details
 
 ### Reports and Studies
 
 **UW Center for Human Rights**
-- "Leaving the Door Wide Open" Report (October 2024)
+- "Leaving the Door Wide Open" Report (October 2025)
 - Website: jsis.washington.edu/humanrights
 
 **Institute for Justice - Plate Privacy Project**
@@ -1481,9 +1481,9 @@ You now have everything you need to file your first (or next) surveillance camer
 
 ---
 
-*This guide was created November 2024 based on Washington State law and recent court precedent. While comprehensive, it does not constitute legal advice. For specific legal guidance, consult an attorney.*
+*This guide was created November 2025 based on Washington State law and recent court precedent. While comprehensive, it does not constitute legal advice. For specific legal guidance, consult an attorney.*
 
-**Version 1.0 | Last Updated: November 2024**
+**Version 1.0 | Last Updated: November 2025**
 
 **Questions about this guide?** Contact advocacy organizations listed in the resources section.
 
