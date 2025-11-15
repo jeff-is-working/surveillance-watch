@@ -628,7 +628,7 @@ export default function SurveillanceAwarenessPage() {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-12 text-center">Additional Resources</h2>
           
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
             <div className="bg-slate-900 p-6 rounded-xl">
               <Shield className="w-12 h-12 text-blue-400 mb-4" />
               <h3 className="text-xl font-bold mb-3">ACLU of Washington</h3>
@@ -662,6 +662,18 @@ export default function SurveillanceAwarenessPage() {
               <a href="https://jsis.washington.edu/humanrights/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
                 Read the Report <ExternalLink className="w-4 h-4 ml-1" />
               </a>
+            </div>
+
+            <div className="bg-slate-900 p-6 rounded-xl border-2 border-green-500">
+              <FileText className="w-12 h-12 text-green-400 mb-4" />
+              <h3 className="text-xl font-bold mb-3">Court Case Document</h3>
+              <p className="text-gray-400 text-sm mb-4">
+                Rodriguez v. City of Sedro Woolley ruling (Nov 2025)
+              </p>
+              <a href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/city-of-sedro-woolley-v-rodriguez.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+                Read Full Ruling <ExternalLink className="w-4 h-4 ml-1" />
+              </a>
+              <p className="text-sm text-gray-500 mt-2">Skagit County Superior Court</p>
             </div>
           </div>
         </div>
