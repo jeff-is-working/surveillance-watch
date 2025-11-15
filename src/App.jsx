@@ -5,7 +5,6 @@ export default function SurveillanceAwarenessPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [expandedFaq, setExpandedFaq] = useState(null);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
-  const [viewingTemplate, setViewingTemplate] = useState(null);
 
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -14,50 +13,50 @@ export default function SurveillanceAwarenessPage() {
   const toolkitFiles = [
     { 
       name: 'Simplified Template', 
-      path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_SIMPLIFIED.md', 
-      filename: 'Simplified_Template.md',
+      path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_SIMPLIFIED.pdf', 
+      filename: 'Surveillance_Camera_Request_SIMPLIFIED.pdf',
       type: 'template'
     },
     { 
       name: 'Comprehensive Template', 
-      path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_template.md', 
-      filename: 'Comprehensive_Template.md',
+      path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_template.pdf', 
+      filename: 'Surveillance_Camera_Request_COMPREHENSIVE.pdf',
       type: 'template'
     },
     { 
       name: 'Complete How-To Guide', 
-      path: import.meta.env.BASE_URL + 'Template_download/HOW_TO_GUIDE_public_records_requests.md', 
-      filename: 'How_To_Guide.md',
+      path: import.meta.env.BASE_URL + 'Template_download/HOW_TO_GUIDE_public_records_requests.pdf', 
+      filename: 'How_To_Guide.pdf',
       type: 'guide'
     },
     { 
       name: 'Quick Start Guide', 
-      path: import.meta.env.BASE_URL + 'Template_download/QUICK_START_one_page_guide.md', 
-      filename: 'Quick_Start_Guide.md',
+      path: import.meta.env.BASE_URL + 'Template_download/QUICK_START_one_page_guide.pdf', 
+      filename: 'Quick_Start_Guide.pdf',
       type: 'guide'
     },
     { 
       name: 'Legal Context Document', 
-      path: import.meta.env.BASE_URL + 'Template_download/LEGAL_CONTEXT_surveillance_cameras.md', 
-      filename: 'Legal_Context.md',
+      path: import.meta.env.BASE_URL + 'Template_download/LEGAL_CONTEXT_surveillance_cameras.pdf', 
+      filename: 'Legal_Context.pdf',
       type: 'guide'
     },
     { 
       name: 'Email Templates', 
-      path: import.meta.env.BASE_URL + 'Template_download/EMAIL_TEMPLATES_all_scenarios.md', 
-      filename: 'Email_Templates.md',
+      path: import.meta.env.BASE_URL + 'Template_download/EMAIL_TEMPLATES_all_scenarios.pdf', 
+      filename: 'Email_Templates.pdf',
       type: 'guide'
     },
     { 
       name: 'Quick Reference', 
-      path: import.meta.env.BASE_URL + 'Template_download/QUICK_REFERENCE_surveillance_requests.md', 
-      filename: 'Quick_Reference.md',
+      path: import.meta.env.BASE_URL + 'Template_download/QUICK_REFERENCE_surveillance_requests.pdf', 
+      filename: 'Quick_Reference.pdf',
       type: 'guide'
     },
     { 
       name: 'Toolkit Index', 
-      path: import.meta.env.BASE_URL + 'Template_download/TOOLKIT_INDEX_master_guide.md', 
-      filename: 'Toolkit_Index.md',
+      path: import.meta.env.BASE_URL + 'Template_download/TOOLKIT_INDEX_master_guide.pdf', 
+      filename: 'Toolkit_Index.pdf',
       type: 'guide'
     }
   ];
@@ -66,15 +65,9 @@ export default function SurveillanceAwarenessPage() {
     setShowDownloadModal(true);
   };
 
-  const viewTemplate = async (file) => {
-    try {
-      const response = await fetch(file.path);
-      const content = await response.text();
-      setViewingTemplate({ name: file.name, content });
-    } catch (error) {
-      console.error('Error loading template:', error);
-      alert('Unable to load template. Please try downloading instead.');
-    }
+  const viewTemplate = (file) => {
+    // Open PDF in new tab for viewing
+    window.open(file.path, '_blank');
   };
 
   const shareThisCampaign = async () => {
@@ -456,11 +449,11 @@ export default function SurveillanceAwarenessPage() {
                       className="w-full bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                     >
                       <BookOpen className="w-5 h-5 mr-2" />
-                      View in Browser
+                      Open PDF
                     </button>
                     <a 
-                      href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_SIMPLIFIED.md"}
-                      download="Surveillance_Camera_Request_SIMPLIFIED.md"
+                      href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_SIMPLIFIED.pdf"}
+                      download="Surveillance_Camera_Request_SIMPLIFIED.pdf"
                       className="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                     >
                       <Download className="w-5 h-5 mr-2" />
@@ -488,11 +481,11 @@ export default function SurveillanceAwarenessPage() {
                       className="w-full bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                     >
                       <BookOpen className="w-5 h-5 mr-2" />
-                      View in Browser
+                      Open PDF
                     </button>
                     <a 
-                      href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_template.md"}
-                      download="Surveillance_Camera_Request_COMPREHENSIVE.md"
+                      href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_template.pdf"}
+                      download="Surveillance_Camera_Request_COMPREHENSIVE.pdf"
                       className="w-full bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                     >
                       <Download className="w-5 h-5 mr-2" />
@@ -556,7 +549,7 @@ export default function SurveillanceAwarenessPage() {
                         className="w-full text-blue-400 hover:text-blue-300 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded transition flex items-center text-sm"
                       >
                         <BookOpen className="w-4 h-4 mr-1" />
-                        View in Browser
+                        Open PDF
                       </button>
                       <a 
                         href={file.path}
@@ -819,44 +812,6 @@ export default function SurveillanceAwarenessPage() {
               <p className="text-sm text-gray-300">
                 <strong>Tip:</strong> Right-click any file and select "Save Link As..." if the download doesn't start automatically.
               </p>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* Template Viewer Modal */}
-      {viewingTemplate && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4" onClick={() => setViewingTemplate(null)}>
-          <div className="bg-slate-800 rounded-xl max-w-4xl w-full max-h-[90vh] overflow-y-auto p-8" onClick={(e) => e.stopPropagation()}>
-            <div className="flex justify-between items-center mb-6 sticky top-0 bg-slate-800 pb-4 border-b border-slate-700">
-              <h3 className="text-2xl font-bold">{viewingTemplate.name}</h3>
-              <button 
-                onClick={() => setViewingTemplate(null)}
-                className="text-gray-400 hover:text-white text-2xl"
-              >
-                &times;
-              </button>
-            </div>
-            <div className="prose prose-invert max-w-none">
-              <pre className="whitespace-pre-wrap text-sm text-gray-300 font-mono bg-slate-900 p-6 rounded-lg overflow-x-auto">
-                {viewingTemplate.content}
-              </pre>
-            </div>
-            <div className="mt-6 flex gap-4 sticky bottom-0 bg-slate-800 pt-4 border-t border-slate-700">
-              <button
-                onClick={() => setViewingTemplate(null)}
-                className="flex-1 bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-lg font-semibold transition"
-              >
-                Close
-              </button>
-              <a
-                href={toolkitFiles.find(f => f.name === viewingTemplate.name)?.path}
-                download={toolkitFiles.find(f => f.name === viewingTemplate.name)?.filename}
-                className="flex-1 bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
-              >
-                <Download className="w-5 h-5 mr-2" />
-                Download This File
-              </a>
             </div>
           </div>
         </div>
