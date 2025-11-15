@@ -670,7 +670,7 @@ export default function SurveillanceAwarenessPage() {
               <p className="text-gray-400 text-sm mb-4">
                 Rodriguez v. City of Sedro Woolley ruling (Nov 2025)
               </p>
-              <a href="https://github.com/jeff-is-working/surveillance-watch/blob/main/public/Template_download/city-of-sedro-woolley-v-rodriguez.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+              <a href="https://www.courts.wa.gov/opinions/pdf/862693.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
                 Read Full Ruling <ExternalLink className="w-4 h-4 ml-1" />
               </a>
               <p className="text-sm text-gray-500 mt-2">Skagit County Superior Court</p>
