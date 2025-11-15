@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { AlertCircle, Eye, Camera, FileText, Users, Shield, ChevronDown, Download, ExternalLink, CheckCircle, XCircle, Share2, BookOpen } from 'lucide-react';
+import { AlertCircle, Eye, Camera, FileText, Users, Shield, ChevronDown, Download, ExternalLink, CheckCircle, XCircle, Share2, BookOpen, Edit } from 'lucide-react';
+import FormWizard from './FormWizard';
 
 export default function SurveillanceAwarenessPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [expandedFaq, setExpandedFaq] = useState(null);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
+  const [showFormWizard, setShowFormWizard] = useState(false);
 
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
@@ -100,6 +102,18 @@ export default function SurveillanceAwarenessPage() {
   };
 
   return (
+    <>
+      {showFormWizard ? (
+        <div className="relative">
+          <button
+            onClick={() => setShowFormWizard(false)}
+            className="fixed top-4 left-4 z-50 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center shadow-lg"
+          >
+            ← Back to Main Site
+          </button>
+          <FormWizard />
+        </div>
+      ) : (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
       {/* Hero Section */}
       <header className="relative overflow-hidden">
@@ -136,11 +150,18 @@ export default function SurveillanceAwarenessPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
+                onClick={() => setShowFormWizard(true)}
+                className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition transform hover:scale-105 flex items-center justify-center"
+              >
+                <Edit className="w-5 h-5 mr-2" />
+                Build My Request
+              </button>
+              <button 
                 onClick={() => scrollToSection('action')}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition transform hover:scale-105 flex items-center justify-center"
               >
                 <FileText className="w-5 h-5 mr-2" />
-                Get the Templates
+                Get Templates
               </button>
               <button 
                 onClick={() => scrollToSection('problem')}
@@ -369,6 +390,29 @@ export default function SurveillanceAwarenessPage() {
             {activeTab === 'overview' && (
               <div className="bg-slate-800 p-8 rounded-xl">
                 <h3 className="text-3xl font-bold mb-6">Quick Start - 3 Steps to Transparency</h3>
+                
+                {/* Interactive Form Builder Callout */}
+                <div className="mb-8 bg-gradient-to-r from-purple-900 to-blue-900 border-2 border-purple-500 rounded-xl p-6">
+                  <div className="flex items-start space-x-4">
+                    <Edit className="w-12 h-12 text-purple-400 flex-shrink-0" />
+                    <div className="flex-1">
+                      <h4 className="text-2xl font-bold mb-2">✨ New: Interactive Request Builder</h4>
+                      <p className="text-gray-200 mb-4">
+                        Answer a few simple questions and we'll generate a customized, ready-to-submit public records request for you. 
+                        No need to manually fill in templates!
+                      </p>
+                      <button
+                        onClick={() => setShowFormWizard(true)}
+                        className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition transform hover:scale-105 flex items-center"
+                      >
+                        <Edit className="w-5 h-5 mr-2" />
+                        Build My Request Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 className="text-xl font-semibold mb-4 text-gray-300">Or Follow the Manual Process:</h4>
                 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -829,5 +873,7 @@ export default function SurveillanceAwarenessPage() {
         </div>
       )}
     </div>
+      )}
+    </>
   );
 }
