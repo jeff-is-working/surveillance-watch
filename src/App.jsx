@@ -11,14 +11,14 @@ export default function SurveillanceAwarenessPage() {
   };
 
   const toolkitFiles = [
-    { name: 'Simplified Template', path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_SIMPLIFIED.md', filename: 'Simplified_Template.md' },
-    { name: 'Comprehensive Template', path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_template.md', filename: 'Comprehensive_Template.md' },
-    { name: 'Complete How-To Guide', path: import.meta.env.BASE_URL + 'Template_download/HOW_TO_GUIDE_public_records_requests.md', filename: 'How_To_Guide.md' },
-    { name: 'Quick Start Guide', path: import.meta.env.BASE_URL + 'Template_download/QUICK_START_one_page_guide.md', filename: 'Quick_Start_Guide.md' },
-    { name: 'Legal Context Document', path: import.meta.env.BASE_URL + 'Template_download/LEGAL_CONTEXT_surveillance_cameras.md', filename: 'Legal_Context.md' },
-    { name: 'Email Templates', path: import.meta.env.BASE_URL + 'Template_download/EMAIL_TEMPLATES_all_scenarios.md', filename: 'Email_Templates.md' },
-    { name: 'Quick Reference', path: import.meta.env.BASE_URL + 'Template_download/QUICK_REFERENCE_surveillance_requests.md', filename: 'Quick_Reference.md' },
-    { name: 'Toolkit Index', path: import.meta.env.BASE_URL + 'Template_download/TOOLKIT_INDEX_master_guide.md', filename: 'Toolkit_Index.md' }
+    { name: 'Simplified Template', path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_SIMPLIFIED.pdf', filename: 'Simplified_Template.pdf' },
+    { name: 'Comprehensive Template', path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_template.pdf', filename: 'Comprehensive_Template.pdf' },
+    { name: 'Complete How-To Guide', path: import.meta.env.BASE_URL + 'Template_download/HOW_TO_GUIDE_public_records_requests.pdf', filename: 'How_To_Guide.pdf' },
+    { name: 'Quick Start Guide', path: import.meta.env.BASE_URL + 'Template_download/QUICK_START_one_page_guide.pdf', filename: 'Quick_Start_Guide.pdf' },
+    { name: 'Legal Context Document', path: import.meta.env.BASE_URL + 'Template_download/LEGAL_CONTEXT_surveillance_cameras.pdf', filename: 'Legal_Context.pdf' },
+    { name: 'Email Templates', path: import.meta.env.BASE_URL + 'Template_download/EMAIL_TEMPLATES_all_scenarios.pdf', filename: 'Email_Templates.pdf' },
+    { name: 'Quick Reference', path: import.meta.env.BASE_URL + 'Template_download/QUICK_REFERENCE_surveillance_requests.pdf', filename: 'Quick_Reference.pdf' },
+    { name: 'Toolkit Index', path: import.meta.env.BASE_URL + 'Template_download/TOOLKIT_INDEX_master_guide.pdf', filename: 'Toolkit_Index.pdf' }
   ];
 
   const downloadAllFiles = () => {
@@ -399,8 +399,8 @@ export default function SurveillanceAwarenessPage() {
                     <li>+ Network audit logs</li>
                   </ul>
                   <a 
-                    href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_SIMPLIFIED.md"}
-                    download="Surveillance_Camera_Request_SIMPLIFIED.md"
+                    href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_SIMPLIFIED.pdf"}
+                    download="Surveillance_Camera_Request_SIMPLIFIED.pdf"
                     className="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                   >
                     <Download className="w-5 h-5 mr-2" />
@@ -422,8 +422,8 @@ export default function SurveillanceAwarenessPage() {
                     <li>+ Financial analyses</li>
                   </ul>
                   <a 
-                    href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_template.md"}
-                    download="Surveillance_Camera_Request_COMPREHENSIVE.md"
+                    href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_template.pdf"}
+                    download="Surveillance_Camera_Request_COMPREHENSIVE.pdf"
                     className="w-full bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
                   >
                     <Download className="w-5 h-5 mr-2" />
@@ -475,8 +475,8 @@ export default function SurveillanceAwarenessPage() {
                     Step-by-step walkthrough with 7 detailed steps, troubleshooting, and Thurston County contacts.
                   </p>
                   <a 
-                    href={import.meta.env.BASE_URL + "Template_download/HOW_TO_GUIDE_public_records_requests.md"}
-                    download="How_To_Guide.md"
+                    href={import.meta.env.BASE_URL + "Template_download/HOW_TO_GUIDE_public_records_requests.pdf"}
+                    download="How_To_Guide.pdf"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
                     <Download className="w-4 h-4 mr-1" />
@@ -490,8 +490,8 @@ export default function SurveillanceAwarenessPage() {
                     One-page printable reference card. Get started in 5 minutes.
                   </p>
                   <a 
-                    href={import.meta.env.BASE_URL + "Template_download/QUICK_START_one_page_guide.md"}
-                    download="Quick_Start_Guide.md"
+                    href={import.meta.env.BASE_URL + "Template_download/QUICK_START_one_page_guide.pdf"}
+                    download="Quick_Start_Guide.pdf"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
                     <Download className="w-4 h-4 mr-1" />
@@ -505,8 +505,8 @@ export default function SurveillanceAwarenessPage() {
                     Deep dive into court ruling, UW report, and how to cite precedent in appeals.
                   </p>
                   <a 
-                    href={import.meta.env.BASE_URL + "Template_download/LEGAL_CONTEXT_surveillance_cameras.md"}
-                    download="Legal_Context.md"
+                    href={import.meta.env.BASE_URL + "Template_download/LEGAL_CONTEXT_surveillance_cameras.pdf"}
+                    download="Legal_Context.pdf"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
                     <Download className="w-4 h-4 mr-1" />
@@ -520,8 +520,8 @@ export default function SurveillanceAwarenessPage() {
                     10 ready-to-use templates for submission, follow-ups, appeals, and more.
                   </p>
                   <a 
-                    href={import.meta.env.BASE_URL + "Template_download/EMAIL_TEMPLATES_all_scenarios.md"}
-                    download="Email_Templates.md"
+                    href={import.meta.env.BASE_URL + "Template_download/EMAIL_TEMPLATES_all_scenarios.pdf"}
+                    download="Email_Templates.pdf"
                     className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
                   >
                     <Download className="w-4 h-4 mr-1" />
