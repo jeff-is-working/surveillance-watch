@@ -1,75 +1,30 @@
 import React, { useState } from 'react';
-import { AlertCircle, Eye, Camera, FileText, Users, Shield, ChevronDown, Download, ExternalLink, CheckCircle, XCircle, Share2, BookOpen, Edit } from 'lucide-react';
+import { AlertCircle, Eye, Camera, FileText, Users, Shield, ChevronDown, Download, ExternalLink, CheckCircle, XCircle, Share2 } from 'lucide-react';
 import FormWizard from './FormWizard';
 
 export default function SurveillanceAwarenessPage() {
   const [activeTab, setActiveTab] = useState('overview');
   const [expandedFaq, setExpandedFaq] = useState(null);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
-  const [showFormWizard, setShowFormWizard] = useState(false);
+  const [showWizard, setShowWizard] = useState(false);
 
   const scrollToSection = (sectionId) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
   const toolkitFiles = [
-    { 
-      name: 'Simplified Template', 
-      path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_SIMPLIFIED.pdf', 
-      filename: 'Surveillance_Camera_Request_SIMPLIFIED.pdf',
-      type: 'template'
-    },
-    { 
-      name: 'Comprehensive Template', 
-      path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_template.pdf', 
-      filename: 'Surveillance_Camera_Request_COMPREHENSIVE.pdf',
-      type: 'template'
-    },
-    { 
-      name: 'Complete How-To Guide', 
-      path: import.meta.env.BASE_URL + 'Template_download/HOW_TO_GUIDE_public_records_requests.pdf', 
-      filename: 'How_To_Guide.pdf',
-      type: 'guide'
-    },
-    { 
-      name: 'Quick Start Guide', 
-      path: import.meta.env.BASE_URL + 'Template_download/QUICK_START_one_page_guide.pdf', 
-      filename: 'Quick_Start_Guide.pdf',
-      type: 'guide'
-    },
-    { 
-      name: 'Legal Context Document', 
-      path: import.meta.env.BASE_URL + 'Template_download/LEGAL_CONTEXT_surveillance_cameras.pdf', 
-      filename: 'Legal_Context.pdf',
-      type: 'guide'
-    },
-    { 
-      name: 'Email Templates', 
-      path: import.meta.env.BASE_URL + 'Template_download/EMAIL_TEMPLATES_all_scenarios.pdf', 
-      filename: 'Email_Templates.pdf',
-      type: 'guide'
-    },
-    { 
-      name: 'Quick Reference', 
-      path: import.meta.env.BASE_URL + 'Template_download/QUICK_REFERENCE_surveillance_requests.pdf', 
-      filename: 'Quick_Reference.pdf',
-      type: 'guide'
-    },
-    { 
-      name: 'Toolkit Index', 
-      path: import.meta.env.BASE_URL + 'Template_download/TOOLKIT_INDEX_master_guide.pdf', 
-      filename: 'Toolkit_Index.pdf',
-      type: 'guide'
-    }
+    { name: 'Simplified Template', path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_SIMPLIFIED.md', filename: 'Simplified_Template.md' },
+    { name: 'Comprehensive Template', path: import.meta.env.BASE_URL + 'Template_download/flock_camera_records_request_template.md', filename: 'Comprehensive_Template.md' },
+    { name: 'Complete How-To Guide', path: import.meta.env.BASE_URL + 'Template_download/HOW_TO_GUIDE_public_records_requests.md', filename: 'How_To_Guide.md' },
+    { name: 'Quick Start Guide', path: import.meta.env.BASE_URL + 'Template_download/QUICK_START_one_page_guide.md', filename: 'Quick_Start_Guide.md' },
+    { name: 'Legal Context Document', path: import.meta.env.BASE_URL + 'Template_download/LEGAL_CONTEXT_surveillance_cameras.md', filename: 'Legal_Context.md' },
+    { name: 'Email Templates', path: import.meta.env.BASE_URL + 'Template_download/EMAIL_TEMPLATES_all_scenarios.md', filename: 'Email_Templates.md' },
+    { name: 'Quick Reference', path: import.meta.env.BASE_URL + 'Template_download/QUICK_REFERENCE_surveillance_requests.md', filename: 'Quick_Reference.md' },
+    { name: 'Toolkit Index', path: import.meta.env.BASE_URL + 'Template_download/TOOLKIT_INDEX_master_guide.md', filename: 'Toolkit_Index.md' }
   ];
 
   const downloadAllFiles = () => {
     setShowDownloadModal(true);
-  };
-
-  const viewTemplate = (file) => {
-    // Open PDF in new tab for viewing
-    window.open(file.path, '_blank');
   };
 
   const shareThisCampaign = async () => {
@@ -102,18 +57,6 @@ export default function SurveillanceAwarenessPage() {
   };
 
   return (
-    <>
-      {showFormWizard ? (
-        <div className="relative">
-          <button
-            onClick={() => setShowFormWizard(false)}
-            className="fixed top-4 left-4 z-50 bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center shadow-lg"
-          >
-            ← Back to Main Site
-          </button>
-          <FormWizard />
-        </div>
-      ) : (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
       {/* Hero Section */}
       <header className="relative overflow-hidden">
@@ -150,18 +93,19 @@ export default function SurveillanceAwarenessPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button 
-                onClick={() => setShowFormWizard(true)}
+                onClick={() => setShowWizard(true)}
                 className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition transform hover:scale-105 flex items-center justify-center"
               >
-                <Edit className="w-5 h-5 mr-2" />
-                Build My Request
+                <FileText className="w-5 h-5 mr-2" />
+                Interactive Wizard
+                <span className="ml-2 bg-white bg-opacity-20 px-2 py-0.5 rounded-full text-xs">NEW</span>
               </button>
               <button 
                 onClick={() => scrollToSection('action')}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition transform hover:scale-105 flex items-center justify-center"
               >
                 <FileText className="w-5 h-5 mr-2" />
-                Get Templates
+                Get the Templates
               </button>
               <button 
                 onClick={() => scrollToSection('problem')}
@@ -341,6 +285,40 @@ export default function SurveillanceAwarenessPage() {
             </p>
           </div>
 
+          {/* NEW WIZARD PROMOTION BOX */}
+          <div className="max-w-4xl mx-auto mb-12">
+            <div className="bg-gradient-to-r from-purple-900 to-blue-900 p-8 rounded-xl border-2 border-purple-500">
+              <div className="flex items-start gap-4">
+                <div className="bg-purple-500 p-3 rounded-lg">
+                  <FileText className="w-8 h-8" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-2">
+                    <h3 className="text-2xl font-bold">Interactive Request Builder</h3>
+                    <span className="bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">NEW!</span>
+                  </div>
+                  <p className="text-gray-300 mb-4">
+                    Our new step-by-step wizard makes it even easier! Search from 253 Washington agencies, 
+                    autofill contact information, and generate your custom request in 5-10 minutes.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mb-4 text-sm">
+                    <span className="bg-purple-700 px-3 py-1 rounded-full">✓ Auto-fill contacts</span>
+                    <span className="bg-purple-700 px-3 py-1 rounded-full">✓ Step-by-step guidance</span>
+                    <span className="bg-purple-700 px-3 py-1 rounded-full">✓ 253 agencies included</span>
+                    <span className="bg-purple-700 px-3 py-1 rounded-full">✓ Ready in minutes</span>
+                  </div>
+                  <button
+                    onClick={() => setShowWizard(true)}
+                    className="bg-white text-purple-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition transform hover:scale-105 flex items-center"
+                  >
+                    Launch Interactive Wizard
+                    <ChevronDown className="w-5 h-5 ml-2 transform rotate-[-90deg]" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="max-w-6xl mx-auto">
             {/* Tab Navigation */}
             <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -391,29 +369,6 @@ export default function SurveillanceAwarenessPage() {
               <div className="bg-slate-800 p-8 rounded-xl">
                 <h3 className="text-3xl font-bold mb-6">Quick Start - 3 Steps to Transparency</h3>
                 
-                {/* Interactive Form Builder Callout */}
-                <div className="mb-8 bg-gradient-to-r from-purple-900 to-blue-900 border-2 border-purple-500 rounded-xl p-6">
-                  <div className="flex items-start space-x-4">
-                    <Edit className="w-12 h-12 text-purple-400 flex-shrink-0" />
-                    <div className="flex-1">
-                      <h4 className="text-2xl font-bold mb-2">✨ New: Interactive Request Builder</h4>
-                      <p className="text-gray-200 mb-4">
-                        Answer a few simple questions and we'll generate a customized, ready-to-submit public records request for you. 
-                        No need to manually fill in templates!
-                      </p>
-                      <button
-                        onClick={() => setShowFormWizard(true)}
-                        className="bg-purple-500 hover:bg-purple-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition transform hover:scale-105 flex items-center"
-                      >
-                        <Edit className="w-5 h-5 mr-2" />
-                        Build My Request Now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-
-                <h4 className="text-xl font-semibold mb-4 text-gray-300">Or Follow the Manual Process:</h4>
-                
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-xl flex-shrink-0">
@@ -455,13 +410,13 @@ export default function SurveillanceAwarenessPage() {
                   </div>
                 </div>
 
-                <div className="mt-8 p-6 bg-slate-700 rounded-lg border border-slate-600">
+                <div className="mt-8 p-6 bg-blue-900 bg-opacity-50 rounded-lg border border-blue-500">
                   <h4 className="text-xl font-bold mb-3 flex items-center">
                     <Users className="w-6 h-6 mr-2" />
                     Total Time Investment
                   </h4>
                   <p className="text-lg">
-                    <strong className="text-white">About 1 hour</strong> for your first request. 
+                    <strong className="text-blue-300">About 1 hour</strong> for your first request. 
                     You'll get faster with practice. Many people have successfully done this!
                   </p>
                 </div>
@@ -487,23 +442,14 @@ export default function SurveillanceAwarenessPage() {
                     <li>+ Federal access records</li>
                     <li>+ Network audit logs</li>
                   </ul>
-                  <div className="space-y-3">
-                    <button 
-                      onClick={() => viewTemplate(toolkitFiles[0])}
-                      className="w-full bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
-                    >
-                      <BookOpen className="w-5 h-5 mr-2" />
-                      Open PDF
-                    </button>
-                    <a 
-                      href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_SIMPLIFIED.pdf"}
-                      download="Surveillance_Camera_Request_SIMPLIFIED.pdf"
-                      className="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
-                    >
-                      <Download className="w-5 h-5 mr-2" />
-                      Download Template
-                    </a>
-                  </div>
+                  <a 
+                    href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_SIMPLIFIED.md"}
+                    download="Surveillance_Camera_Request_SIMPLIFIED.md"
+                    className="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
+                  >
+                    <Download className="w-5 h-5 mr-2" />
+                    Download Simplified Template
+                  </a>
                 </div>
 
                 <div className="bg-slate-800 p-6 rounded-xl border-2 border-purple-500">
@@ -519,23 +465,14 @@ export default function SurveillanceAwarenessPage() {
                     <li>+ Extensive correspondence</li>
                     <li>+ Financial analyses</li>
                   </ul>
-                  <div className="space-y-3">
-                    <button 
-                      onClick={() => viewTemplate(toolkitFiles[1])}
-                      className="w-full bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
-                    >
-                      <BookOpen className="w-5 h-5 mr-2" />
-                      Open PDF
-                    </button>
-                    <a 
-                      href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_template.pdf"}
-                      download="Surveillance_Camera_Request_COMPREHENSIVE.pdf"
-                      className="w-full bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
-                    >
-                      <Download className="w-5 h-5 mr-2" />
-                      Download Template
-                    </a>
-                  </div>
+                  <a 
+                    href={import.meta.env.BASE_URL + "Template_download/flock_camera_records_request_template.md"}
+                    download="Surveillance_Camera_Request_COMPREHENSIVE.md"
+                    className="w-full bg-purple-500 hover:bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold transition flex items-center justify-center"
+                  >
+                    <Download className="w-5 h-5 mr-2" />
+                    Download Comprehensive Template
+                  </a>
                 </div>
 
                 <div className="md:col-span-2 bg-gradient-to-r from-slate-800 to-slate-700 p-6 rounded-xl">
@@ -576,36 +513,65 @@ export default function SurveillanceAwarenessPage() {
 
             {activeTab === 'guides' && (
               <div className="grid md:grid-cols-2 gap-6">
-                {toolkitFiles.filter(f => f.type === 'guide').map((file, index) => (
-                  <div key={index} className="bg-slate-800 p-6 rounded-xl">
-                    <h3 className="text-xl font-bold mb-3">{file.name}</h3>
-                    <p className="text-gray-300 text-sm mb-4">
-                      {file.name === 'Complete How-To Guide' && 'Step-by-step walkthrough with 7 detailed steps, troubleshooting, and Thurston County contacts.'}
-                      {file.name === 'Quick Start Guide' && 'One-page printable reference card. Get started in 5 minutes.'}
-                      {file.name === 'Legal Context Document' && 'Deep dive into court ruling, UW report, and how to cite precedent in appeals.'}
-                      {file.name === 'Email Templates' && '10 ready-to-use templates for submission, follow-ups, appeals, and more.'}
-                      {file.name === 'Quick Reference' && 'Handy reference guide with legal rights, what to request, and troubleshooting.'}
-                      {file.name === 'Toolkit Index' && 'Master guide to all files with usage instructions and best practices.'}
-                    </p>
-                    <div className="space-y-2">
-                      <button
-                        onClick={() => viewTemplate(file)}
-                        className="w-full text-blue-400 hover:text-blue-300 bg-slate-700 hover:bg-slate-600 px-4 py-2 rounded transition flex items-center text-sm"
-                      >
-                        <BookOpen className="w-4 h-4 mr-1" />
-                        Open PDF
-                      </button>
-                      <a 
-                        href={file.path}
-                        download={file.filename}
-                        className="w-full text-blue-400 hover:text-blue-300 flex items-center text-sm px-4 py-2"
-                      >
-                        <Download className="w-4 h-4 mr-1" />
-                        Download File
-                      </a>
-                    </div>
-                  </div>
-                ))}
+                <div className="bg-slate-800 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold mb-3">📖 Complete How-To Guide</h3>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Step-by-step walkthrough with 7 detailed steps, troubleshooting, and Thurston County contacts.
+                  </p>
+                  <a 
+                    href={import.meta.env.BASE_URL + "Template_download/HOW_TO_GUIDE_public_records_requests.md"}
+                    download="How_To_Guide.md"
+                    className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
+                  >
+                    <Download className="w-4 h-4 mr-1" />
+                    Download Guide
+                  </a>
+                </div>
+
+                <div className="bg-slate-800 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold mb-3">⚡ Quick Start Guide</h3>
+                  <p className="text-gray-300 text-sm mb-4">
+                    One-page printable reference card. Get started in 5 minutes.
+                  </p>
+                  <a 
+                    href={import.meta.env.BASE_URL + "Template_download/QUICK_START_one_page_guide.md"}
+                    download="Quick_Start_Guide.md"
+                    className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
+                  >
+                    <Download className="w-4 h-4 mr-1" />
+                    Download PDF
+                  </a>
+                </div>
+
+                <div className="bg-slate-800 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold mb-3">⚖️ Legal Context Document</h3>
+                  <p className="text-gray-300 text-sm mb-4">
+                    Deep dive into court ruling, UW report, and how to cite precedent in appeals.
+                  </p>
+                  <a 
+                    href={import.meta.env.BASE_URL + "Template_download/LEGAL_CONTEXT_surveillance_cameras.md"}
+                    download="Legal_Context.md"
+                    className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
+                  >
+                    <Download className="w-4 h-4 mr-1" />
+                    Download Document
+                  </a>
+                </div>
+
+                <div className="bg-slate-800 p-6 rounded-xl">
+                  <h3 className="text-xl font-bold mb-3">📧 Email Templates</h3>
+                  <p className="text-gray-300 text-sm mb-4">
+                    10 ready-to-use templates for submission, follow-ups, appeals, and more.
+                  </p>
+                  <a 
+                    href={import.meta.env.BASE_URL + "Template_download/EMAIL_TEMPLATES_all_scenarios.md"}
+                    download="Email_Templates.md"
+                    className="text-blue-400 hover:text-blue-300 flex items-center text-sm"
+                  >
+                    <Download className="w-4 h-4 mr-1" />
+                    Download Templates
+                  </a>
+                </div>
               </div>
             )}
 
@@ -672,14 +638,14 @@ export default function SurveillanceAwarenessPage() {
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-bold mb-12 text-center">Additional Resources</h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-slate-900 p-6 rounded-xl">
               <Shield className="w-12 h-12 text-blue-400 mb-4" />
               <h3 className="text-xl font-bold mb-3">ACLU of Washington</h3>
               <p className="text-gray-400 text-sm mb-4">
                 Privacy & surveillance advocacy, legal assistance
               </p>
-              <a href="https://www.aclu-wa.org" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+              <a href="https://www.aclu-wa.org" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
                 Visit Website <ExternalLink className="w-4 h-4 ml-1" />
               </a>
               <p className="text-sm text-gray-500 mt-2">Phone: (206) 624-2184</p>
@@ -691,7 +657,7 @@ export default function SurveillanceAwarenessPage() {
               <p className="text-gray-400 text-sm mb-4">
                 Public records guidance, dispute resolution
               </p>
-              <a href="https://www.atg.wa.gov/open-government" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+              <a href="https://www.atg.wa.gov/open-government" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
                 Public Records Resources <ExternalLink className="w-4 h-4 ml-1" />
               </a>
               <p className="text-sm text-gray-500 mt-2">Phone: (360) 753-6200</p>
@@ -703,21 +669,9 @@ export default function SurveillanceAwarenessPage() {
               <p className="text-gray-400 text-sm mb-4">
                 Surveillance research, federal access report
               </p>
-              <a href="https://jsis.washington.edu/humanrights/" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
+              <a href="https://jsis.washington.edu/humanrights/" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
                 Read the Report <ExternalLink className="w-4 h-4 ml-1" />
               </a>
-            </div>
-
-            <div className="bg-slate-900 p-6 rounded-xl border-2 border-green-500">
-              <FileText className="w-12 h-12 text-green-400 mb-4" />
-              <h3 className="text-xl font-bold mb-3">Court Case Document</h3>
-              <p className="text-gray-400 text-sm mb-4">
-                Rodriguez v. City of Sedro Woolley ruling (Nov 2025)
-              </p>
-              <a href="https://www.courts.wa.gov/opinions/pdf/862693.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-blue-300 text-sm flex items-center">
-                Read Full Ruling <ExternalLink className="w-4 h-4 ml-1" />
-              </a>
-              <p className="text-sm text-gray-500 mt-2">Skagit County Superior Court</p>
             </div>
           </div>
         </div>
@@ -806,13 +760,7 @@ export default function SurveillanceAwarenessPage() {
           </div>
           
           <div className="mt-12 text-sm text-gray-300">
-            <p className="mb-2">
-              Questions? Contact{' '}
-              <a href="https://www.aclu-wa.org" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 underline">
-                the ACLU of Washington
-              </a>
-              {' '}or your local advocacy organizations.
-            </p>
+            <p>Questions? Contact the ACLU of Washington or your local advocacy organizations.</p>
           </div>
         </div>
       </section>
@@ -872,8 +820,29 @@ export default function SurveillanceAwarenessPage() {
           </div>
         </div>
       )}
-    </div>
+
+      {/* WIZARD MODAL */}
+      {showWizard && (
+        <div 
+          className="fixed inset-0 z-50 overflow-y-auto bg-black bg-opacity-90"
+          onClick={() => setShowWizard(false)}
+        >
+          <div className="min-h-screen p-4">
+            {/* Close button */}
+            <button 
+              onClick={() => setShowWizard(false)}
+              className="fixed top-4 right-4 bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold z-50 shadow-lg transition"
+            >
+              ✕ Close Wizard
+            </button>
+            
+            {/* Wizard component */}
+            <div onClick={(e) => e.stopPropagation()}>
+              <FormWizard />
+            </div>
+          </div>
+        </div>
       )}
-    </>
+    </div>
   );
 }
