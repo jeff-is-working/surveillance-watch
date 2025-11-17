@@ -1,26 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Search, ChevronRight, ChevronLeft, Check, Download, AlertCircle, MapPin, Calendar, User, Building } from 'lucide-react';
-
-// Contact data from the spreadsheet
-const CONTACTS_DATA = [
-  {"County": "Lewis", "City": "Centralia", "Email": "cityclerk@cityofcentralia.com", "Portal URL": "https://www.cityofcentralia.com/", "Notes": "City Clerk"},
-  {"County": "Lewis", "City": "Chehalis", "Email": "cityclerk@ci.chehalis.wa.us", "Portal URL": "https://www.ci.chehalis.wa.us/", "Notes": "City Clerk"},
-  {"County": "Lewis", "City": "Winlock", "Email": "info@cityofwinlock.com", "Portal URL": "https://www.cityofwinlock.com/", "Notes": "General Contact"},
-  {"County": "Lewis", "City": "Napavine", "Email": "cityclerk@cityofnapavine.com", "Portal URL": "https://www.cityofnapavine.com/", "Notes": "City Clerk"},
-  {"County": "Lewis", "City": "Morton", "Email": "mortoncityhall@cityofmorton.com", "Portal URL": null, "Notes": "City Hall"},
-  {"County": "Lewis", "City": "Mossyrock", "Email": "mossyrockcityhall@gmail.com", "Portal URL": null, "Notes": "City Hall"},
-  {"County": "Lewis", "City": "Toledo", "Email": "clerk@toledowa.us", "Portal URL": null, "Notes": "City Clerk"},
-  {"County": "Lewis", "City": "Vader", "Email": "vadercity@centurylink.net", "Portal URL": null, "Notes": "City Hall"},
-  {"County": "Lewis", "City": "Pe Ell", "Email": "peelltownhall@gmail.com", "Portal URL": null, "Notes": "Town Hall"},
-  {"County": "Thurston", "City": "Olympia", "Email": "cityclerk@ci.olympia.wa.us", "Portal URL": "https://olympiawa.gov/", "Notes": "City Clerk"},
-  {"County": "Thurston", "City": "Lacey", "Email": "publicrecords@cityoflacey.org", "Portal URL": "https://www.cityoflacey.org/", "Notes": "Public Records"},
-  {"County": "Thurston", "City": "Tumwater", "Email": "publicrecords@ci.tumwater.wa.us", "Portal URL": "https://www.ci.tumwater.wa.us/", "Notes": "Public Records"},
-  {"County": "Thurston", "City": "Yelm", "Email": "cityclerk@yelmwa.gov", "Portal URL": "https://www.yelmwa.gov/", "Notes": "City Clerk"},
-  {"County": "Thurston", "City": "Rainier", "Email": "cityclerk@rainierwa.com", "Portal URL": "https://www.rainierwa.com/", "Notes": "City Clerk"},
-  {"County": "Thurston", "City": "Tenino", "Email": "cityclerk@cityoftenino.us", "Portal URL": "https://www.cityoftenino.us/", "Notes": "City Clerk"},
-  {"County": "Thurston", "City": "Bucoda", "Email": "townofbucoda@comcast.net", "Portal URL": null, "Notes": "Town Office"},
-  // Add more as needed - this is a sample. The full list would include all 253 entries
-];
+import { CONTACTS_DATA } from './contactsData.js';
 
 export default function FormWizard() {
   const [currentStep, setCurrentStep] = useState(1);
